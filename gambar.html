@@ -1,0 +1,54 @@
+<html>
+    <head>
+        <title>TI19A</title>
+    </head>
+    <body>
+        <a href="profil.html">Profil</a><br>
+        
+        <!-- Konten utama -->
+        <p align="center"><b>my poto</b></p>
+        <p><b>dua taun</b></p>
+        <img src="Kembar.jpg" border="3" height="300" width="300"><br><br>
+        
+        <!-- Tabel nama pacar -->
+        <h2>Daftar Nama Pacar</h2>
+        <table border="1" cellpadding="5" cellspacing="0">
+            <tr>
+                <th>No</th>
+                <th>Nama</th>
+                <th>Alamat</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Andi</td>
+                <td>Bandung</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>agung</td>
+                <td>Jakarta</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>yanda</td>
+                <td>Surabaya</td>
+            </tr>
+        </table>
+        <br>
+        
+        <!-- Form pencarian jodoh -->
+        <h2>Formulir Cari Jodoh</h2>
+        <form action="proses_jodoh.html" method="POST">
+            <label for="nama">Nama Anda:</label><br>
+            <input type="text" id="nama" name="nama" required><br><br>
+            
+            <label for="umur">Umur:</label><br>
+            <input type="number" id="umur" name="umur" required><br><br>
+            
+            <label for="kriteria">Kriteria Pasangan:</label><br>
+            <textarea id="kriteria" name="kriteria" rows="4" cols="30" required></textarea><br><br>
+            
+            <button type="submit">Cari Jodoh</button>
+        </form>
+    </body>
+</html>
