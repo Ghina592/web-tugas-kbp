@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <style>
+     * { 
+         border: 2px solid #dedede; 
+         padding: 10px; 
+         margin: 10px; 
+     }
+     html { 
+         margin: 0;
+         padding: 0;
+     }
+     body { 
+         max-width: 600px;
+         margin: 30px auto;
+         font-family: sans-serif;
+         color: #72a9b3;
+     }
+ </style>
+</head>
+<body>
+ <h1 id="h1"> nanana</h1>
+ <div id="container1">
+     <section id="a">
+         <p> Paragraf 1 </p>
+         <p> Paragraf 2 </p>
+         <a href="#">Link</a>
+     </section>
+ </div>
+ <div id="container2">
+     <ul>
+         <li class="list"> List 1 </li>
+         <li class="list"> List 2 </li>
+         <li class="list"> List 3 </li>
+     </ul>
+ </div>
+ <script>
+     document.addEventListener('DOMContentLoaded', () => {
+         // 1. Mengganti warna background div menjadi warna kesukaan
+         const divs = document.querySelectorAll('div');
+         divs.forEach(div => {
+             div.style.backgroundColor = '#a3d5ff'; // Ganti dengan warna kesukaan Anda
+         });
+
+         // 2. Mengganti atribut href pada tag <a>
+         const link = document.querySelector('a');
+         link.setAttribute('href', 'https://www.google.com');
+
+         // 3. Menggunakan loop untuk mengubah text, style, size, dan warna background
+         const listItems = document.querySelectorAll('.list');
+         listItems.forEach((item, index) => {
+             item.textContent = `Item Baru ${index + 1}`; // Ubah teks
+             item.style.fontSize = '18px'; // Ganti ukuran font
+             item.style.fontStyle = 'italic'; // Ganti style font
+             item.style.backgroundColor = index % 2 === 0 ? '#ffdfba' : '#d4ffaa'; // Warna background bergantian
+         });
+     });
+ </script>
+</body>
+</html>
