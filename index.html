@@ -40,23 +40,23 @@
  </div>
  <script>
      document.addEventListener('DOMContentLoaded', () => {
-         // 1. Mengganti warna background div menjadi warna kesukaan
+        
          const divs = document.querySelectorAll('div');
          divs.forEach(div => {
-             div.style.backgroundColor = '#a3d5ff'; // Ganti dengan warna kesukaan Anda
+             div.style.backgroundColor = '#a3d5ff';
          });
 
-         // 2. Mengganti atribut href pada tag <a>
+      
          const link = document.querySelector('a');
          link.setAttribute('href', 'https://www.google.com');
 
-         // 3. Menggunakan loop untuk mengubah text, style, size, dan warna background
+      
          const listItems = document.querySelectorAll('.list');
          listItems.forEach((item, index) => {
-             item.textContent = `Item Baru ${index + 1}`; // Ubah teks
-             item.style.fontSize = '18px'; // Ganti ukuran font
-             item.style.fontStyle = 'italic'; // Ganti style font
-             item.style.backgroundColor = index % 2 === 0 ? '#ffdfba' : '#d4ffaa'; // Warna background bergantian
+             item.textContent = `Item Baru ${index + 1}`; 
+             item.style.fontSize = '18px';
+             item.style.fontStyle = 'italic'; 
+             item.style.backgroundColor = index % 2 === 0 ? '#ffdfba' : '#d4ffaa'; 
          });
      });
  </script>
